@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+/*Globales*/
+body{
+    font-family: 'Protest Strike', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+
+section{
+    border: solid red 2px;
+}
+img{
+    max-width: 100%;
+}
+/*header*/
+.cabecera{
+    overflow: hidden;
+    background: #ccc;
+    border: solid red 2px;
+}
+.cabecera img{
+    display:block;
+    width: 120px;
+    height: 100px;
+    margin: auto;
+    border: solid rgb(90, 2, 90) 3px;
+}
+.cabecera h1{
+    text-align: center;
+    font-size: 37px;
+}
+.cabecera h3{
+    text-align: center;
+}
+
+/*nav*/
+.menu{
+    background-color: #ccc;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 32px;
+}
+.menu ul li a:hover{
+    color: red;
+}
+
+/*seccion biografia*/
+#biografia{
+    background-color: #ccc;
+    text-align: center;
+}
+#biografia img{
+    width: 400px;
+}
+#biografia article{
+    text-align: justify;
+}
+/*seccion inicio futbol*/
+#futbol{
+    background-color: #ccc;
+    text-align: center;
+}
+#futbol article{
+    text-align: justify;
+}
+
+/*seccion inicio botas*/
+.productos{
+    background-color: #ccc;
+    text-align: center;
+    
+    place-items: center;
+}
+#productos{
+    background-color: #ccc;
+    text-align: center;
+    place-items: center;
+}
+.productos article{
+    margin: 12px;
+    padding: 12px;
+    
+}
+
+/*footer*/
+footer{
+    background-color: #ccc;
+    border: solid red 2px;
+}
+footer h2{
+    text-align: center;
+}
+footer section{
+    border: none;
+    
+}
+
+/*productos*/
+
+.contenedorDeProducto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+.producto{
+    border-radius: 10px;
+    
+}
+.producto:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.20);
+}
+.informacionProducto{
+    padding: 15px 30px;
+}
+.producto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 35px;
+}
+.producto figure{
+    overflow: hidden;
+}
+.producto:hover img{
+    transform: scale(1.2);
+}
+.informacionProducto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.precio{
+    font-size: 20px;
+    font-weight: 900;
+}
+.informacionProducto button{
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+/*return button*/
+.return{
+    position: fixed ; 
+    bottom: 5px; left: 2%;
+    justify-content: right;
+    width: 20px;
+}
+
+/*formulario*/
+#formulario{
+    background-color: #ccc;
+}
+#formulario h2{
+    text-align: center;
+}
+
+/*correccion*/
+.solucion{
+    background-color: #ccc;
+    text-align: center;
+}
+.solucion img{
+    width: 50px;
+}
